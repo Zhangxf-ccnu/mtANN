@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: mtANN
+Version: 1.0.0
+Summary: Ensemble Multiple References for Single-cell RNA Seuquencing Data Annotation and Unseen Cells Identification
+Author: Yi-Xuan Xiong
+Author-email: xyxuana@mails.ccnu.edu.cn
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Ensemble of multiple references for single-cell RNA sequencing data annotation and unseen cell-type identification
+
+mtANN is a novel cell-type annotation framework
+that integrates ensemble learning and deep learning
+simultaneously, to annotate cells in a new query dataset with the help of multiple well-labeled reference datasets. It takes multiple well-labeled reference datasets and a query dataset that needs to be annotated as input. It begins with generating a series of subsets for each reference dataset by adopting various gene selection methods. Next, for each reference subset, a base classification model is trained based on neural networks. Then, mtANN annotates the cells in the query dataset by integrating the prediction results from all the base classification models. Finally, it identifies cells that may belong to cell types not observed in the reference datasets according to the uncertainty of the predictions.
+
+## System Requirements
+
+Python support packages: pandas, numpy, scipy, sklearn, torch, giniclust, nipy
+
+## Versions the software has been tested on
+
+### Environment 1
+- System: Ubuntu 18.04.5
+- Python: 3.8.8
+- Python packages: pandas = 1.2.3, numpy = 1.19,2, scipy = 1.6.1, sklearn = 0.24.1, torch = 1.9.1, giniclust = 1.1.0, nipy = 0.5.0
+
+### Environment 2
+- System: Mac OS 12.2.1
+- Python: 3.7.4
+- Python packages: pandas = 1.3.2, numpy = 1.18,1, scipy = 1.4.1, sklearn = 0.22.1, torch = 1.9.0, giniclust = 1.1.2, nipy = 0.5.0
+
+# Installation
+
+`pip install mtANN`
+
+# Useage
+
+The <font color=#6495ED>demo.py</font> file provides a demo of running the mtANN package, and the results can be obtained by running the following code:  
+`python demo.py` <br \> and the results are saved in the results folder, where <br \> 
+ <font color=#6495ED>pred<u> </u>label.csv</font> is the annotation results of mtANN, <br \> 
+ <font color=#6495ED>unk<u> </u>ind.csv</font> is the index of unseen cells identified by mtANN, <br \> 
+ <font color=#6495ED>entropy.csv</font> is the measurement of mtANN for identifying unseen cells.
+ 
+# Contact
+
+Please do not hesitate to contact Miss Yi-Xuan Xiong ([xyxuana@mails.ccnu.edu.cn](xyxuana@mails.ccnu.edu.cn)) or Dr. Xiao-Fei Zhang ([zhangxf@ccnu.edu.cn](zhangxf@ccnu.edu.cn)) to seek any clarifications regarding any contents or operation of the archive.
+
+
+
+
