@@ -14,7 +14,7 @@ for file in os.listdir("./datasets/"):
         D.append(file.split("_")[0])
 
 target = D[0]
-source = np.copy(D)
+source = list(np.copy(D))
 source.remove(target)
 
 features = ["de", "dv", "dd", "dp", "bi","gc","disp","vst"]
