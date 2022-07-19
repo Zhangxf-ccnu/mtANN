@@ -1,6 +1,8 @@
 # Ensemble of multiple references for single-cell RNA sequencing data annotation and unseen cell-type identification
 
-mtANN is a novel cell-type annotation frameworkthat integrates ensemble learning and deep learningsimultaneously, to annotate cells in a new query dataset with the help of multiple well-labeled reference datasets. It takes multiple well-labeled reference datasets and a query dataset that needs to be annotated as input. It begins with generating a series of subsets for each reference dataset by adopting various gene selection methods. Next, for each reference subset, a base classification model is trained based on neural networks. Then, mtANN annotates the cells in the query dataset by integrating the prediction results from all the base classification models. Finally, it identifies cells that may belong to cell types not observed in the reference datasets according to the uncertainty of the predictions.
+mtANN is a novel cell-type annotation framework
+that integrates ensemble learning and deep learning
+simultaneously, to annotate cells in a new query dataset with the help of multiple well-labeled reference datasets. It takes multiple well-labeled reference datasets and a query dataset that needs to be annotated as input. It begins with generating a series of subsets for each reference dataset by adopting various gene selection methods. Next, for each reference subset, a base classification model is trained based on neural networks. Then, mtANN annotates the cells in the query dataset by integrating the prediction results from all the base classification models. Finally, it identifies cells that may belong to cell types not observed in the reference datasets according to the uncertainty of the predictions.
 
 ## System Requirements
 
@@ -30,10 +32,11 @@ Python support packages: pandas, numpy, scanpy, scipy, sklearn, torch, giniclust
 # Useage
 
 The `demo.py` file provides a demo of running the mtANN package, and the results can be obtained by running the following code:  
-`python demo.py` <br \> and the results are saved in the results folder, where <br \> 
-`pred_label.csv` is the annotation results of mtANN, <br \> 
- `unk_ind.csv` is the index of unseen cells identified by mtANN, <br \> 
- `entropy.csv` is the measurement of mtANN for identifying unseen cells.
+`python demo.py` 
+and the results are saved in the results folder, where
+`pred_label.csv` is the annotation results of mtANN, 
+`unk_ind.csv` is the index of unseen cells identified by mtANN, 
+`entropy.csv` is the measurement of mtANN for identifying unseen cells.
  
 Note: For the source data, please download the data and unzip it. Then put them under the same path with `demo.py`.
  
