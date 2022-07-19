@@ -8,8 +8,14 @@ from mtANN.select_gene import select_gene
 import scanpy as sc
 from collections import Counter
 
-source = ["muraro", "seg", "xin"]
-target = "human"
+D = []
+for file in os.listdir("./datasets/"):
+    if len(file.split("_")) == 2:
+        D.append(file.split("_")[0])
+
+target = D[0]
+source = np.copy(D)
+source.remove(target)
 
 features = ["de", "dv", "dd", "dp", "bi","gc","disp","vst"]
 
