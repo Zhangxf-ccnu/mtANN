@@ -33,9 +33,9 @@ Python support packages: pandas, numpy, scanpy, scipy, sklearn, torch, giniclust
 
 The `demo.py` file provides a demo of running the mtANN package, and the results can be obtained by running the following code:  
 `python demo.py` 
-and the results are saved in the results folder, where
-`pred_label.csv` is the annotation results of mtANN, 
-`unk_ind.csv` is the index of unseen cells identified by mtANN, 
+and the results are saved in the results folder, where  
+`pred_label.csv` is the annotation results of mtANN,  
+`unk_ind.csv` is the index of unseen cells identified by mtANN,  
 `entropy.csv` is the measurement of mtANN for identifying unseen cells.
  
 Note: For the source data, please download the data and unzip it. Then put them under the same path with `demo.py`.
