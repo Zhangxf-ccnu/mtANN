@@ -37,10 +37,6 @@ The mtANN repository includes the mtANN code files in the `mtANN` folder and pro
 
 The input data considered by the current version of mtANN is in `csv` format, where rows are samples and columns are features. In addition, its cell type information is stored in another csv file, and its naming format is the name of the dataset + `_label`.
 
-# Installation
-
-`pip install mtANN==0.1.0`
-
  
 # Contact
 
