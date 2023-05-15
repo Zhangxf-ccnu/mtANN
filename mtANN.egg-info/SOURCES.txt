@@ -1,7 +1,7 @@
 README.md
 setup.py
-mtANN/mtANN_model.py
-mtANN/mtANN_utils.py
+mtANN/model.py
+mtANN/utils.py
 mtANN.egg-info/PKG-INFO
 mtANN.egg-info/SOURCES.txt
 mtANN.egg-info/dependency_links.txt
