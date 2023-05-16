@@ -1,0 +1,8 @@
+pandas
+numpy
+scanpy
+scipy
+scikit-learn
+torch
+giniclust3
+rpy2

@@ -5,8 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="mtANN", 
-    version="0.1.0",
-    py_modules=['mtANN.model', 'mtANN.utils'],
+    version="1.0",
     author="Yi-Xuan Xiong",
     author_email="xyxuana@mails.ccnu.edu.cn",
     description="Ensemble Multiple References for Single-cell RNA Seuquencing Data Annotation and Unseen Cells Identification",
@@ -14,4 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),
     python_requires='>=3.7',
+    install_requires=['pandas', 'numpy',
+    'scanpy','scipy','scikit-learn',
+    'torch','giniclust3','rpy2'],
 )

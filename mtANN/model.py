@@ -11,7 +11,7 @@ import os
 import math
 from collections import Counter
 import random
-from utils import NetEncoder, NetDecoder, NetClassifier, label_transform_num, num_to_label
+from .utils import NetEncoder, NetDecoder, NetClassifier, label_transform_num, num_to_label
 from scipy.sparse import issparse
 from sklearn.preprocessing import scale, minmax_scale
 from sklearn.mixture import GaussianMixture
